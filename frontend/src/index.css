@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Patrick Hand', cursive, sans-serif;
+    color: #2d2d2d;
+    background-color: #fdfbf7;
+    background-image: radial-gradient(#e5e0d8 1.5px, transparent 1.5px);
+    background-size: 24px 24px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kalam', cursive, sans-serif;
+    font-weight: 700;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  video, canvas {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+}
+
+/* Wobbly Organic Radii */
+.wobbly {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.wobbly-md {
+  border-radius: 20px 255px 20px 25px / 25px 20px 255px 20px;
+}
+
+.wobbly-lg {
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.wobbly-tag {
+  border-radius: 120px 10px 100px 10px / 10px 100px 10px 120px;
+}
+
+.wobbly-circle {
+  border-radius: 60% 40% 70% 30% / 40% 50% 60% 50%;
+}
+
+/* Hand-Drawn Buttons */
+.sketch-btn {
+  background-color: #ffffff;
+  color: #2d2d2d;
+  border: 2.5px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transition: transform 100ms ease, box-shadow 100ms ease, background-color 100ms ease, color 100ms ease;
+  font-family: 'Patrick Hand', cursive, sans-serif;
+}
+
+.sketch-btn:hover {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  box-shadow: 2px 2px 0px 0px #2d2d2d;
+  transform: translate(2px, 2px);
+}
+
+.sketch-btn:active {
+  box-shadow: 0px 0px 0px 0px #2d2d2d;
+  transform: translate(4px, 4px);
+}
+
+.sketch-btn-secondary {
+  background-color: #e5e0d8;
+  color: #2d2d2d;
+  border: 2.5px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transition: transform 100ms ease, box-shadow 100ms ease, background-color 100ms ease, color 100ms ease;
+}
+
+.sketch-btn-secondary:hover {
+  background-color: #2d5da1;
+  color: #ffffff;
+  box-shadow: 2px 2px 0px 0px #2d2d2d;
+  transform: translate(2px, 2px);
+}
+
+.sketch-btn-secondary:active {
+  box-shadow: 0px 0px 0px 0px #2d2d2d;
+  transform: translate(4px, 4px);
+}
+
+.sketch-btn-accent {
+  background-color: #ff4d4d;
+  color: #ffffff;
+  border: 2.5px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.sketch-btn-accent:hover {
+  background-color: #e03636;
+  box-shadow: 2px 2px 0px 0px #2d2d2d;
+  transform: translate(2px, 2px);
+}
+
+.sketch-btn-accent:active {
+  box-shadow: 0px 0px 0px 0px #2d2d2d;
+  transform: translate(4px, 4px);
+}
+
+/* Hand-Drawn Cards */
+.sketch-card {
+  background-color: #ffffff;
+  border: 2px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 20px 255px 20px 25px / 25px 20px 255px 20px;
+}
+
+.sketch-card-postit {
+  background-color: #fff9c4;
+  border: 2px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.sketch-card-mint {
+  background-color: #d1fae5;
+  border: 2px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.sketch-card-blue {
+  background-color: #e0f2fe;
+  border: 2px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+.sketch-card-rose {
+  background-color: #ffe4e6;
+  border: 2px solid #2d2d2d;
+  box-shadow: 4px 4px 0px 0px #2d2d2d;
+  border-radius: 255px 25px 225px 25px / 25px 225px 25px 255px;
+}
+
+/* Tape Strip Effect */
+.tape-strip {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 22px;
+  background-color: rgba(229, 224, 216, 0.85);
+  border: 1px dashed rgba(45, 45, 45, 0.4);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.tape-corner-left {
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  transform: rotate(-35deg);
+  width: 50px;
+  height: 18px;
+  background-color: rgba(229, 224, 216, 0.85);
+  border: 1px dashed rgba(45, 45, 45, 0.4);
+  z-index: 10;
+}
+
+.tape-corner-right {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  transform: rotate(35deg);
+  width: 50px;
+  height: 18px;
+  background-color: rgba(229, 224, 216, 0.85);
+  border: 1px dashed rgba(45, 45, 45, 0.4);
+  z-index: 10;
+}
+
+/* Thumbtack Pin */
+.thumbtack-pin {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #ff4d4d;
+  border: 2px solid #2d2d2d;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0px 0px #2d2d2d;
+  z-index: 15;
+}
+
+.thumbtack-pin-blue {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background-color: #2d5da1;
+  border: 2px solid #2d2d2d;
+  border-radius: 50%;
+  box-shadow: 2px 2px 0px 0px #2d2d2d;
+  z-index: 15;
+}
+
+/* Sketched Progress Bar Hatching */
+.sketch-progress-striped {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #2d2d2d,
+    #2d2d2d 6px,
+    #fff9c4 6px,
+    #fff9c4 12px
+  );
+  background-size: 24px 24px;
+}
+
+.sketch-progress-green {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #2d2d2d,
+    #2d2d2d 6px,
+    #6ee7b7 6px,
+    #6ee7b7 12px
+  );
+  background-size: 24px 24px;
+}
+
+/* Custom Scrollbar for Sketchbook */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdfbf7;
+  border-left: 1.5px solid #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2d2d2d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff4d4d;
+}
