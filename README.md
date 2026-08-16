@@ -42,12 +42,12 @@
 
 ```mermaid
 graph TD
-    A[Simulation Engine (1s tick)] -->|State Updates| B[Express + Socket.io Server]
-    B -->|Broadcasts State| C[React 18 Frontend]
-    B -->|Every 60s| D[AI Mayor (Gemma 4 31B)]
+    A["Simulation Engine (1s tick)"] -->|State Updates| B["Express + Socket.io Server"]
+    B -->|Broadcasts State| C["React 18 Frontend"]
+    B -->|Every 60s| D["AI Mayor (Gemma 4 31B)"]
     D -->|Autonomous Decision| B
-    B -->|Mint JWT| E[Reactor API]
-    C -->|WebRTC / ARTC Stream| F[Happy Oyster 2.0 World Model]
+    B -->|Mint JWT| E["Reactor API"]
+    C -->|WebRTC / ARTC Stream| F["Happy Oyster 2.0 World Model"]
     C -->|Instruct Scenes| F
 ```
 
