@@ -10,19 +10,9 @@
 
 ---
 
-## 📸 Screenshots & Visual Walkthrough
+## 📸 Preview
 
-### 1. 🎥 Live 720p Generative World Stream (`@reactor-models/happy-oyster`)
-Dynamic cartoon farming world rendered in real-time on Reactor's GPU cluster with zero artifacts and live WebRTC streaming.
-![Happy Oyster Live Stream](./docs/screenshots/live_stream.png)
-
-### 2. 🧠 Autonomous AI Mayor's Journal & Reasoning Engine
-The Mayor autonomously evaluates farm conditions, makes trade-off calculations, and orders construction projects once every minute.
-![Mayor Journal & Reasoning](./docs/screenshots/mayor_journal.png)
-
-### 3. 🗺️ Real-time 2D Canvas & Multi-District Dashboard
-Multi-view architecture with instant toggles between **Happy Oyster Directing**, **3D Adventure**, and the **City Map Canvas**.
-![City Map Canvas](./docs/screenshots/city_map_canvas.png)
+![FarmState Dashboard Preview](./docs/screenshots/farmstate_dashboard.png)
 
 ---
 
@@ -73,7 +63,7 @@ graph TD
 
 ### 2. Clone the Repository
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone https://github.com/zorox06/inception-event-.git
 cd reactor
 ```
 
@@ -130,7 +120,7 @@ reactor/
 │   │   └── index.css                # Hand-drawn sketch design tokens
 │   └── package.json
 ├── docs/
-│   └── screenshots/          # Embedded website screenshots
+│   └── screenshots/          # Embedded website screenshot
 ├── .gitignore
 ├── package.json
 └── README.md
